@@ -1,0 +1,87 @@
+
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #00111a, #00334d); /* Night sky background */
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  .snow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .snowflake {
+    position: absolute;
+    top: -50px; /* Start above the viewport */
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fall 5s linear infinite, sway 2s ease-in-out infinite;
+  }
+  
+  /* Keyframe for falling */
+  @keyframes fall {
+    0% {
+      top: -50px;
+      transform: translateX(0);
+      opacity: 0.8;
+    }
+    100% {
+      top: 100vh; /* End below the viewport */
+      transform: translateX(20px); /* Optional slight movement */
+      opacity: 0.1; /* Fade out */
+    }
+  }
+  
+  /* Keyframe for swaying motion */
+  @keyframes sway {
+    0%, 100% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+  }
+  
+  /* Add multiple snowflakes with varying delays and sizes */
+  .snowflake:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s, 1s;
+    width: 8px;
+    height: 8px;
+  }
+  
+  .snowflake:nth-child(2) {
+    left: 30%;
+    animation-delay: 1s, 2s;
+    width: 12px;
+    height: 12px;
+  }
+  
+  .snowflake:nth-child(3) {
+    left: 50%;
+    animation-delay: 2s, 0s;
+    width: 6px;
+    height: 6px;
+  }
+  
+  .snowflake:nth-child(4) {
+    left: 70%;
+    animation-delay: 1.5s, 1.5s;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .snowflake:nth-child(5) {
+    left: 90%;
+    animation-delay: 0.5s, 0.5s;
+    width: 14px;
+    height: 14px;
+  }
+  
