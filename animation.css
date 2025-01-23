@@ -124,3 +124,17 @@
             transform: rotate(45deg);
         }
     }
+    /*======================= End Half Rotate ====================*/
+
+    /*======================= Wave ====================*/
+    @keyframes wave {
+        0%, 100% {
+          transform: translateX(-50%) scaleX(0.5);
+          opacity: 0.8;
+        }
+        50% {
+          transform: translateX(0) scaleX(1);
+          opacity: 1;
+        }
+      }
+     /*======================= End Wave ====================*/
