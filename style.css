@@ -61,16 +61,25 @@ body {
   }
   
 
-  /* Typing */
+  /* Animation */
 
-.text-wrapper{
-   
+.imgBox {
+    position: relative;
+    width: 100%;
 }
-h1 {
-    display: block; /* Each span occupies its own line */
-    overflow: hidden; /* Ensures text stays inside the container */
-    white-space: nowrap; /* Prevents text wrapping */
-    border-right: 2px solid black; /* Cursor effect */
+.ellipse-1 {
+    position: absolute;
+    top: -70px;
+    right: -100px;
+    z-index: -1;
+    animation: movementUpDown 2s ease-in-out 2s infinite alternate;
 
-    animation: typing 5s steps(30, end) 2s forwards infinite, blink 0.6s step-end;
+}
+
+.ellipse-2 {
+    position: absolute;
+    bottom: -66px;
+    left: -68px;
+    z-index: -1;
+    animation: halfRotate 5s ease-in-out 2s infinite alternate;
 }
