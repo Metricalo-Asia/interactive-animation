@@ -60,118 +60,12 @@ body {
     height: 14px;
   }
   
-  
-@keyframes movementUpDown{
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(30px);
-    }
+
+  /* Movement */
+  .imgBox img {
+    animation: movementUpDown 2s ease-in-out 2s infinite alternate;
   }
-  
-  @keyframes movementLeftRight{
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(30px);
-    }
+
+  .imgBox2 img {
+    animation: movementLeftRight 2s ease-in-out 2s infinite alternate;
   }
-  
-  @keyframes textShadow-1{
-    0% {
-      text-shadow: 1px -2px 2px var(--color-primary-light);
-    }
-    100% {
-      text-shadow: 2px -4px 4px var(--color-primary-light);
-    }
-  }
-  
-  @keyframes boxShadow-1{
-    0% {
-      box-shadow: 0px 0px 5px 1px var(--color-primary-dark) inset;
-    }
-  
-    25% {
-      box-shadow: 1px 1px 5px 1px var(--color-primary-dark) inset;
-    }
-  
-    50% {
-      box-shadow: 2px 2px 5px 2px var(--color-primary-dark) inset;
-    }
-  
-    75% {
-      box-shadow: 3px 3px 5px 2px var(--color-primary-dark) inset;
-    }
-  
-    75% {
-      box-shadow: 4px 4px 5px 2px var(--color-primary-dark) inset;
-    }
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  
-  @keyframes blink {
-    from, to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: black;
-    }
-  }
-  
-  @keyframes progress-bar {
-    0% {
-      border-color: transparent;
-    }
-    25% {
-      border-color: var(--color-primary-light) transparent transparent transparent; /* Top border */
-      filter: blur(4px);
-    }
-    50% {
-      border-color: var(--color-primary-light) var(--color-primary-light) transparent transparent; /* Top and Right borders */
-      filter: blur(3px);
-    }
-    75% {
-      border-color: var(--color-primary-light) var(--color-primary-light) var(--color-primary-light) transparent; /* Top, Right, Bottom borders */
-      filter: blur(3px);
-    }
-    100% {
-      border-color: var(--color-primary-light) var(--color-primary-light) var(--color-primary-light) var(--color-primary-light); /* Full border */
-      filter: blur(4px);
-    }
-  }
-  
-  /*======================= Snow ====================*/
-   /* Keyframe for falling */
-   @keyframes fall {
-    0% {
-      top: -50px;
-      transform: translateX(0);
-      opacity: 0.8;
-    }
-    100% {
-      top: 100vh; /* End below the viewport */
-      transform: translateX(20px); /* Optional slight movement */
-      opacity: 0.1; /* Fade out */
-    }
-  }
-  
-  /* Keyframe for swaying motion */
-  @keyframes sway {
-    0%, 100% {
-      transform: translateX(-10px);
-    }
-    50% {
-      transform: translateX(10px);
-    }
-  }
-  /*======================= End Snow ====================*/
