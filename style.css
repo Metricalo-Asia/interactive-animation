@@ -76,3 +76,51 @@ body {
     }
   }
     /* ============ End Water ============ */
+
+    /* ============ Fog ============ */
+    .fog-wrapper {
+      display: flex;
+      z-index: 1;
+      padding: 200px;
+
+      width: 960px;
+      height: 400px;
+      background: #2e2e2e;
+
+    }
+    .fog-wrapper span {
+      display: block;
+      margin: 0 2px 50px;
+      min-width: 8px;
+      height: 120px;
+      background: #fff;
+      border-radius: 50%;
+      animation: fog 5s linear infinite;
+      filter: blur(8px);
+      animation-delay: calc(var(--i) * -0.5s );
+    }
+
+    @keyframes fog {
+      0% {
+        transform: translateY(0) scaleX(1);
+        opacity: 0;
+      }
+
+      15% {
+        opacity: 1;
+      }
+
+      50% {
+        transform: translateY(-150px) scaleX(5);
+        
+      }
+      95% {
+        opacity: 0;
+      }
+
+      100% {
+        transform: translateY(-300px) scaleX(10);
+        opacity: 0;
+      }
+    }
+    /* ============ End Fog ============ */
