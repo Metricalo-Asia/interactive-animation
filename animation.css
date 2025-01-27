@@ -147,3 +147,15 @@
           transform: translateX(50%);
         }
       }
+
+
+/*======================= Half Rotate ====================*/
+@keyframes halfRotate{
+  0% {
+      transform: rotate(0);
+  }
+  100% {
+      transform: rotate(45deg);
+  }
+}
+/*======================= End Half Rotate ====================*/
