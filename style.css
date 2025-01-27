@@ -126,7 +126,7 @@ body {
     /* ============ End Fog ============ */
 
 /* ============ Half Rotate ============ */
-.imgBox {
+.imgBox-ellipse {
   position: relative;
   width: 100%;
 }
@@ -148,3 +148,14 @@ body {
 }
 
 /* ============ End Half Rotate ============ */
+
+/* ============ Movement ============ */
+  .imgBox img {
+    animation: movementUpDown 2s ease-in-out 2s infinite alternate;
+  }
+
+  .imgBox2 img {
+    animation: movementLeftRight 2s ease-in-out 2s infinite alternate;
+  }
+
+  /* ============ End Movement ============ */
