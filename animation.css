@@ -159,3 +159,30 @@
   }
 }
 /*======================= End Half Rotate ====================*/
+
+
+  /*======================= Snow ====================*/
+   /* Keyframe for falling */
+   @keyframes fall {
+    0% {
+      top: -50px;
+      transform: translateX(0);
+      opacity: 0.8;
+    }
+    100% {
+      top: 100vh; /* End below the viewport */
+      transform: translateX(20px); /* Optional slight movement */
+      opacity: 0.1; /* Fade out */
+    }
+  }
+  
+  /* Keyframe for swaying motion */
+  @keyframes sway {
+    0%, 100% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+  }
+  /*======================= End Snow ====================*/
