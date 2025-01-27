@@ -29,15 +29,6 @@ body {
     animation-delay: 1s;
   }
   
-  /* Wave animation keyframes */
-  @keyframes curve-wave {
-    0% {
-      transform: translateX(-50%);
-    }
-    100% {
-      transform: translateX(50%);
-    }
-  }
   
   /* ============ Water ============ */
   .water-wrapper {
@@ -61,20 +52,6 @@ body {
     animation: water-wave 15s linear infinite;
   }
 
-  @keyframes water-wave {
-    0% {
-      background-position: left 0px top 80px;
-    }
-    40% {
-      background-position: left 800px top -50px;
-    }
-    80% {
-      background-position: left 1800px top -50px;
-    }
-    80% {
-      background-position: left 250px top 80px;
-    }
-  }
     /* ============ End Water ============ */
 
     /* ============ Fog ============ */
@@ -100,29 +77,6 @@ body {
       animation-delay: calc(var(--i) * -0.5s );
     }
 
-    @keyframes fog {
-      0% {
-        transform: translateY(0) scaleX(1);
-        opacity: 0;
-      }
-
-      15% {
-        opacity: 1;
-      }
-
-      50% {
-        transform: translateY(-150px) scaleX(5);
-        
-      }
-      95% {
-        opacity: 0;
-      }
-
-      100% {
-        transform: translateY(-300px) scaleX(10);
-        opacity: 0;
-      }
-    }
     /* ============ End Fog ============ */
 
 /* ============ Half Rotate ============ */
