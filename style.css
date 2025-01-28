@@ -1,187 +1,45 @@
-body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .wave-container {
-    height: 100px;
-    overflow: hidden;
-  }
-  
-  .wave {
-    width: 700px;
-    height: 1px;
-    background: linear-gradient(90deg, #f85555, #fa9f9f);
-    animation: curve-wave 10s ease 1s infinite alternate;
-    margin: 5px 0;
-  }
-  
-  /* Styling for second and third waves */
-  .wave:nth-child(2) {
-    top: 30px;
-    animation-delay: 0.5s;
-  }
-  
-  .wave:nth-child(3) {
-    top: 60px;
-    animation-delay: 1s;
-  }
-  
-  
-  /* ============ Water ============ */
-  .water-wrapper {
-    width: 960px;
-    height: 400px;
-    background: #2e2e2e;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .water-wrapper h1{
-    text-transform: uppercase;
-    font-size: 5rem;
-    font-weight: bold;
-    color: rgb(255, 255, 255, 0.1);
-    background-image: url(./img/water-wave-fish.png);
-    background-size: cover;
-    background-repeat: repeat-x;
-    -webkit-background-clip: text;
-    animation: water-wave 15s linear infinite;
-  }
+body
+{
+  overflow:hidden;
+  background-color:#000030;
+  background-image:url("https://images.unsplash.com/photo-1536152470836-b943b246224c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80");
+  background-size:100%;
+  background-position:center;
 
-    /* ============ End Water ============ */
+}
 
-    /* ============ Fog ============ */
-    .fog-wrapper {
-      display: flex;
-      z-index: 1;
-      padding: 200px;
+@media only screen and (max-width: 600px) {
+  body {
+    background-size: auto;
+    background-position: right;
+  }
+}
 
-      width: 960px;
-      height: 400px;
-      background: #2e2e2e;
-
-    }
-    .fog-wrapper span {
-      display: block;
-      margin: 0 2px 50px;
-      min-width: 8px;
-      height: 120px;
-      background: #fff;
-      border-radius: 50%;
-      animation: fog 5s linear infinite;
-      filter: blur(8px);
-      animation-delay: calc(var(--i) * -0.5s );
-    }
-
-    /* ============ End Fog ============ */
-
-/* ============ Half Rotate ============ */
-.imgBox-ellipse {
-  position: relative;
+.starfall {
+  position: absolute;
+  height: 100%;
   width: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  z-index: 0;
 }
-.ellipse-1 {
+.starfall .falling-star {
+  width: 8px;
+  height: 8px;
+  background: #00d1b2;
   position: absolute;
-  top: -70px;
-  right: -100px;
-  z-index: -1;
-  animation: movementUpDown 2s ease-in-out 2s infinite alternate;
-
+  border-radius: 50%;
+  opacity: 0.5;
 }
-
-.ellipse-2 {
-  position: absolute;
-  bottom: -66px;
-  left: -68px;
-  z-index: -1;
-  animation: halfRotate 5s ease-in-out 2s infinite alternate;
+.falling-star:nth-child(1) {
+  -webkit-transform: translateX(68vw) translateY(-8px);
+  transform: translateX(68vw) translateY(-8px);
+  -webkit-animation: anim1 4s infinite;
+  animation: anim1 4s infinite;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
-
-/* ============ End Half Rotate ============ */
-
-/* ============ Movement ============ */
-  .imgBox img {
-    animation: movementUpDown 2s ease-in-out 2s infinite alternate;
-  }
-
-  .imgBox2 img {
-    animation: movementLeftRight 2s ease-in-out 2s infinite alternate;
-  }
-
-  /* ============ End Movement ============ */
-
-
-  /* ============ Snow ============ */
-
-  .snow-container {
-    position: relative;
-    width: 100%;
-    height: 400px;
-    overflow: hidden;
-    background: linear-gradient(to bottom, #00111a, #00334d);
-  }
-  
-  .snowflake {
-    position: absolute;
-    top: -50px; /* Start above the viewport */
-    left: 50%;
-    width: 10px;
-    height: 10px;
-    background: white;
-    border-radius: 50%;
-    opacity: 0.8;
-    animation: fall 5s linear infinite, sway 2s ease-in-out infinite;
-  }
-
-  .snowflake:nth-child(1) {
-    left: 10%;
-    animation-delay: 0s, 1s;
-    width: 8px;
-    height: 8px;
-  }
-  
-  .snowflake:nth-child(2) {
-    left: 30%;
-    animation-delay: 1s, 2s;
-    width: 12px;
-    height: 12px;
-  }
-  
-  .snowflake:nth-child(3) {
-    left: 50%;
-    animation-delay: 2s, 0s;
-    width: 6px;
-    height: 6px;
-  }
-  
-  .snowflake:nth-child(4) {
-    left: 70%;
-    animation-delay: 1.5s, 1.5s;
-    width: 10px;
-    height: 10px;
-  }
-  
-  .snowflake:nth-child(5) {
-    left: 90%;
-    animation-delay: 0.5s, 0.5s;
-    width: 14px;
-    height: 14px;
-  }
-  /* ============ End Snow ============ */
-
-  /* ============ Typing ============ */
-
-h1 {
-  display: block; /* Each span occupies its own line */
-  overflow: hidden; /* Ensures text stays inside the container */
-  white-space: nowrap; /* Prevents text wrapping */
-  border-right: 2px solid black; /* Cursor effect */
-
-  animation: typing 5s steps(30, end) 2s forwards infinite, blink 0.6s step-end;
-}
-
-  /* ============ End Typing ============ */
