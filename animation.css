@@ -1,9 +1,22 @@
 
-@keyframes animStar {
-  from {
-    transform: translateY(0px);
+@keyframes wave {
+  2% {
+    transform: translateX(1);
   }
-  to {
-    transform: translateY(-2000px);
+
+  25% {
+    transform: translateX(-25%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  75% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(1);
   }
 }
