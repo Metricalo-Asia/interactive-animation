@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="06ff765a-af1f-4f1e-a927-f72059eade00" name="Changes" comment="" />
+    <list default="true" id="06ff765a-af1f-4f1e-a927-f72059eade00" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +19,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2sFOywOnsDkamGp29XvK9uZHFJE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,7 +29,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/Metricalo/interactive-animation",
+    "last_opened_file_path": "C:/xampp82/htdocs/orocommerce",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -38,7 +42,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738048113643</updated>
-      <workItem from="1738048115165" duration="4000000" />
+      <workItem from="1738048115165" duration="4601000" />
+      <workItem from="1738160509356" duration="98000" />
+      <workItem from="1738160634117" duration="1247000" />
+      <workItem from="1738165308160" duration="33000" />
     </task>
     <servers />
   </component>
