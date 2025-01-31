@@ -185,3 +185,32 @@ h1 {
 }
 
   /* ============ End Typing ============ */
+
+  /* ============ Elastic Line ============ */
+  .elastic-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    background: #000;
+  }
+
+  svg {
+    position: absolute;
+    width: 400px;
+    fill: none;
+  }
+
+  svg:nth-child(2){
+    filter: blur(50px);
+  }
+
+  svg path {
+    d: path("M0, 25 C150, 110 150, -60 300, 25");
+    stroke: #ff0092;
+    stroke-width: 50;
+    stroke-linecap: round;
+    transform: translate(50px, 50%);
+    animation: elastic-line 2s ease-in-out infinite;
+  }
+  /* ============ End Elastic Line ============ */
