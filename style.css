@@ -235,7 +235,7 @@ h1 {
   border-radius: 10px; /* Match the border-radius of the image */
   box-sizing: border-box;
   z-index: 1;
-  animation: progress-bar 5s linear infinite;
+  animation: progress-border 5s linear infinite;
 }
 /* ============ End  Progress bar ============ */
 

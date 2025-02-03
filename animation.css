@@ -68,7 +68,7 @@
     }
   }
   
-  @keyframes progress-bar {
+  @keyframes progress-border {
     0% {
       border-color: transparent;
     }
