@@ -204,17 +204,37 @@ h1 {
     background: #000;
   }
 
-  svg {
+  .elastic-1 {
     position: absolute;
     width: 400px;
     fill: none;
   }
 
-  svg:nth-child(2){
+  .elastic-1:nth-child(2){
     filter: blur(50px);
   }
 
-  svg path {
+  .elastic-1 path {
+    d: path("M0, 25 C150, 110 150, -60 300, 25");
+    stroke: #ff0092;
+    stroke-width: 50;
+    stroke-linecap: round;
+    transform: translate(50px, 50%);
+    animation: elastic-line 2s ease-in-out infinite;
+  }
+
+
+  .elastic-2 {
+    position: absolute;
+    width: 400px;
+    fill: none;
+  }
+
+  .elastic-2:nth-child(2){
+    filter: blur(50px);
+  }
+
+  .elastic-2 path {
     d: path("M0, 25 C150, 110 150, -60 300, 25");
     stroke: #ff0092;
     stroke-width: 50;
@@ -397,3 +417,9 @@ h1 {
   border-radius: 10px;
 }
 /* ============ End Scroll Bar Track ============ */
+
+/* ============ Star Scale ============ */
+.star {
+  animation: scale 3s linear infinite;
+}
+/* ============ End Star Scale ============ */
